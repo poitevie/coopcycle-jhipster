@@ -1,0 +1,26 @@
+{
+  "coopcycleApp": {
+    "shop": {
+      "home": {
+        "title": "Shops",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Shop erstellen",
+        "createOrEditLabel": "Shop erstellen oder bearbeiten",
+        "notFound": "Keine Shops gefunden"
+      },
+      "created": "Shop erstellt mit ID {{ param }}",
+      "updated": "Shop aktualisiert mit ID {{ param }}",
+      "deleted": "Shop gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Shop {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Shop"
+      },
+      "id": "ID",
+      "addressS": "Address S",
+      "menu": "Menu",
+      "cart": "Cart"
+    }
+  }
+}

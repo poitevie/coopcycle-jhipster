@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20220414200730",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "cart",
+  "fields": [
+    {
+      "fieldName": "amount",
+      "fieldType": "Float",
+      "fieldValidateRules": ["required", "min"],
+      "fieldValidateRulesMin": "0"
+    },
+    {
+      "fieldName": "deadline",
+      "fieldType": "Float",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Cart",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "command",
+      "otherEntityRelationshipName": "cart",
+      "ownerSide": true,
+      "relationshipName": "command",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "cart",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "shop",
+      "otherEntityRelationshipName": "cart",
+      "relationshipName": "shop",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

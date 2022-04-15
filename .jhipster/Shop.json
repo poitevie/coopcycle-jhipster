@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20220414200729",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "shop",
+  "fields": [
+    {
+      "fieldName": "addressS",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "menu",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Shop",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "cart",
+      "otherEntityRelationshipName": "shop",
+      "relationshipName": "cart",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20220414200727",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "cooperative",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Cooperative",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "driver",
+      "otherEntityRelationshipName": "cooperative",
+      "relationshipName": "driver",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

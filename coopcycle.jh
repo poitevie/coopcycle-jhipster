@@ -1,0 +1,53 @@
+
+entity Client {
+	idC String required
+    firstnameC String required maxlength(20) pattern(/^[A-Z][a-z]+$/) 
+    lastnameC String required maxlength(20) pattern(/^[A-Z][a-z]+$/) 
+    emailC String required maxlength(50) pattern(/^([a-zA-Z0-9_\-\\.]+)@([a-zA-Z0-9_\-\\.]+)\\.([a-zA-Z]{2,5})$/) 
+    phoneC String
+    addressC String required maxlength(100)
+}
+
+entity Cooperative {
+	id String required,
+    name String required,
+}
+
+entity Driver {
+    firstnameD String required maxlength(50) pattern(/^[A-Z][a-z]+$/) 
+    lastnameD String required maxlength(50) pattern(/^[A-Z][a-z]+$/) 
+    phoneD String
+}
+
+entity Shop {
+    addressS String required,
+    menu String
+}
+
+entity Cart {
+    amount Float required min(0),
+    deadline Float required
+}
+
+entity Command {
+	addressC String required,
+    dateC Float required
+}
+
+relationship OneToOne {
+	Cart to Command
+}
+
+relationship OneToMany {
+	Cooperative to Driver,
+    Client to Cart,
+    Shop to Cart,
+    Driver to Command,
+    Client to Cart,
+}
+
+relationship ManyToOne {
+	Command to Client,
+}
+
+dto * with mapstruct

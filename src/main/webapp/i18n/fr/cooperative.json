@@ -1,0 +1,25 @@
+{
+  "coopcycleApp": {
+    "cooperative": {
+      "home": {
+        "title": "Cooperatives",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Cooperative",
+        "createOrEditLabel": "Créer ou éditer un Cooperative",
+        "notFound": "Aucun Cooperative trouvé"
+      },
+      "created": "Un nouveau Cooperative a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Cooperative avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Cooperative avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Cooperative {{ id }} ?"
+      },
+      "detail": {
+        "title": "Cooperative"
+      },
+      "id": "Id",
+      "name": "Name",
+      "driver": "Driver"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "applications": "*",
+  "changelogDate": "20220414200731",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "command",
+  "fields": [
+    {
+      "fieldName": "addressC",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dateC",
+      "fieldType": "Float",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Command",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "command",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "cart",
+      "otherEntityRelationshipName": "command",
+      "ownerSide": false,
+      "relationshipName": "cart",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "driver",
+      "otherEntityRelationshipName": "command",
+      "relationshipName": "driver",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,65 @@
+{
+  "applications": "*",
+  "changelogDate": "20220414200726",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "client",
+  "fields": [
+    {
+      "fieldName": "idC",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "firstnameC",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength", "pattern"],
+      "fieldValidateRulesMaxlength": "20",
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+$"
+    },
+    {
+      "fieldName": "lastnameC",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength", "pattern"],
+      "fieldValidateRulesMaxlength": "20",
+      "fieldValidateRulesPattern": "^[A-Z][a-z]+$"
+    },
+    {
+      "fieldName": "emailC",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength", "pattern"],
+      "fieldValidateRulesMaxlength": "50",
+      "fieldValidateRulesPattern": "^([a-zA-Z0-9_\\-\\\\.]+)@([a-zA-Z0-9_\\-\\\\.]+)\\\\.([a-zA-Z]{2,5})$"
+    },
+    {
+      "fieldName": "phoneC",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addressC",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "100"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Client",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "cart",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "cart",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "command",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "command",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

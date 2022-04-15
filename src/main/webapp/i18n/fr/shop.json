@@ -1,0 +1,26 @@
+{
+  "coopcycleApp": {
+    "shop": {
+      "home": {
+        "title": "Shops",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Shop",
+        "createOrEditLabel": "Créer ou éditer un Shop",
+        "notFound": "Aucun Shop trouvé"
+      },
+      "created": "Un nouveau Shop a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Shop avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Shop avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Shop {{ id }} ?"
+      },
+      "detail": {
+        "title": "Shop"
+      },
+      "id": "ID",
+      "addressS": "Address S",
+      "menu": "Menu",
+      "cart": "Cart"
+    }
+  }
+}

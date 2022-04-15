@@ -1,0 +1,28 @@
+{
+  "coopcycleApp": {
+    "driver": {
+      "home": {
+        "title": "Drivers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Driver",
+        "createOrEditLabel": "Maak of wijzig een Driver",
+        "notFound": "No Drivers found"
+      },
+      "created": "A new Driver is created with identifier {{ param }}",
+      "updated": "A Driver is updated with identifier {{ param }}",
+      "deleted": "A Driver is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Driver {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Driver"
+      },
+      "id": "ID",
+      "firstnameD": "Firstname D",
+      "lastnameD": "Lastname D",
+      "phoneD": "Phone D",
+      "command": "Command",
+      "cooperative": "Cooperative"
+    }
+  }
+}
